@@ -40,6 +40,6 @@ $(function () {
     activate(animal, 0);
 
     $("h1").click(function () {
-        $(this).html('Kliknij poniżej. Wybierz jedną ze stron');
+        $(this).html('Kliknij poniżej. Wybierz jedną ze&nbsp;stron');
     });
 });
