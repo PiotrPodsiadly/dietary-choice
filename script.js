@@ -12,10 +12,10 @@ $(function () {
                     current = container.children(".active").index(),
                     next = current + 1,
                     target = $(event.target);
-                if (target.is(".icon")){
+                if (target.is(".icon")) {
                     activate(container, target.index());
                 } else {
-                    if (next === total){
+                    if (next === total) {
                         next = 0;
                     }
                     activate(container, next);
