@@ -2,7 +2,7 @@ body {
     background-color: #c9e9fb;
 }
 
-h1 {
+h1, h2 {
     text-align: center;
 }
 
@@ -16,6 +16,7 @@ h1 {
 
 #choices > div {
     height: 70vh;
+    min-height: 32vw;
     background-color: #92c7e5;
     transition: all .2s ease;
     position: relative;
@@ -27,6 +28,9 @@ h1 {
 
 #choices > div > div:not(.navigation) {
     display: none;
+    position: relative;
+    top: 50%;
+    transform: perspective(1px) translateY(-50%);
 }
 
 #choices > div > div.active {
@@ -53,4 +57,10 @@ h1 {
 
 .navigation > .active {
     background-color: #e3f5ff;
+}
+
+img{
+	max-width: 100%;
+	max-height: 100%;
+	vertical-align: middle;
 }
