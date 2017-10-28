@@ -18,8 +18,39 @@ h1 {
     height: 70vh;
     background-color: #92c7e5;
     transition: all .2s ease;
+    position: relative;
 }
 
 #choices > div:hover {
     background-color: #62a6cd;
+}
+
+#choices > div > div:not(.navigation) {
+    display: none;
+}
+
+#choices > div > div.active {
+    display: block;
+}
+
+.navigation {
+    position: absolute;
+    left: 50%;
+    bottom: 1vh;
+    transform: translate(-50%, 0%);
+}
+
+.navigation > .icon {
+    cursor: pointer;
+    height: .8em;
+    width: .8em;
+    padding: 0;
+    margin: 0 .12em;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.navigation > .active {
+    background-color: #e3f5ff;
 }
