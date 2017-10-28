@@ -32,10 +32,14 @@ a:hover {
     text-decoration: underline;
 }
 
-p{
+p {
 	margin: 1em;
 	font-size: 10px;
 	text-align: justify;
+}
+
+p + p {
+    margin-top: -0.5em;
 }
 
 #choices {
