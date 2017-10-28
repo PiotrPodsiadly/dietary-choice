@@ -15,6 +15,23 @@ h2 {
     font-size: 16px;
 }
 
+#next {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    padding: 2em;
+}
+
+a {
+    text-decoration: none;
+    color: #133e6b;
+}
+
+a:hover {
+    color: #234f8f;
+    text-decoration: underline;
+}
+
 p{
 	margin: 1em;
 	font-size: 10px;
@@ -90,6 +107,9 @@ img{
     p{
     	font-size: 12px;
     }
+    #next{
+        font-size: 16px;
+    }
     #choices {
         width: 90vw;
     }
@@ -103,6 +123,9 @@ img{
     }
     h2 {
         font-size: 22px;
+    }
+    #next{
+        font-size: 18px;
     }
     p{
     	font-size: 14px;
@@ -120,6 +143,9 @@ img{
     }
     h2 {
         font-size: 24px;
+    }
+    #next{
+        font-size: 20px;
     }
     p{
     	font-size: 16px;
