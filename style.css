@@ -10,13 +10,13 @@ h1, h2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1.2em;
-    width: 60vw;
+    width: 95vw;
     margin: auto;
 }
 
 #choices > div {
     height: 70vh;
-    min-height: 32vw;
+    min-height: 52vw;
     background-color: #92c7e5;
     transition: all .2s ease;
     position: relative;
@@ -63,4 +63,33 @@ img{
 	max-width: 100%;
 	max-height: 100%;
 	vertical-align: middle;
+}
+
+p{
+	margin: 1em;
+}
+
+@media (min-width: 768px) {
+    #choices {
+        width: 90vw;
+    }
+    #choices > div {
+        min-height: 50vw;
+    }
+}
+@media (min-width: 992px) {
+    #choices {
+        width: 80vw;
+    }
+    #choices > div {
+        min-height: 42vw;
+    }
+}
+@media (min-width: 1200px) {
+    #choices {
+        width: 60vw;
+    }
+    #choices > div {
+        min-height: 32vw;
+    }
 }
