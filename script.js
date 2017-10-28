@@ -3,14 +3,24 @@ $(function () {
         plantNavigation = $('<div class="navigation"></div>'),
         animalNavigation = $('<div class="navigation"></div>'),
         initialize = function (container, navigation) {
-            container.children().each(function (i) {
-                var navigationIcon = $('<span class="icon"></span>');
-                navigationIcon.click(function () {
-                    activate(container, i);
-                });
-                navigation.append(navigationIcon);
+            container.children().each(function () {
+                navigation.append($('<span class="icon"></span>'));
             });
             container.append(navigation);
+            container.click(function(event){
+                var total = container.children(":not(.navigation)").length,
+                    current = container.children(".active").index(),
+                    next = current + 1,
+                    target = $(event.target);
+                if (target.is(".icon")){
+                    activate(container, target.index());
+                } else {
+                    if (next === total){
+                        next = 0;
+                    }
+                    activate(container, next);
+                }
+            });
         },
         activate = function (container, i) {
             container.children(".navigation").children().each(function () {
