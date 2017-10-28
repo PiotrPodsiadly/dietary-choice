@@ -7,7 +7,7 @@ $(function () {
                 navigation.append($('<span class="icon"></span>'));
             });
             container.append(navigation);
-            container.click(function(event){
+            container.click(function (event) {
                 var total = container.children(":not(.navigation)").length,
                     current = container.children(".active").index(),
                     next = current + 1,
@@ -38,4 +38,8 @@ $(function () {
 
     activate(plant, 0);
     activate(animal, 0);
+
+    $("h1").click(function () {
+        $(this).html('Kliknij poniżej. Wybierz jedną ze stron');
+    });
 });
