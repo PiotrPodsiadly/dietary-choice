@@ -42,6 +42,22 @@ p + p {
     margin-top: -0.5em;
 }
 
+#footer {
+    text-align: center;
+}
+
+.fa {
+    padding: 1em;
+    text-align: center;
+    background-color: #c2e1f2;
+    border-radius: 30%;
+}
+
+.fa:hover {
+    background-color: #a3d3ef;
+    text-decoration: none;
+}
+
 #choices {
     display: grid;
     grid-template-columns: 1fr 1fr;
