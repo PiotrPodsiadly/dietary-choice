@@ -18,7 +18,7 @@ h2 {
 #next {
     text-align: center;
     font-size: 14px;
-    padding: 2em;
+    padding: .9em;
 }
 
 a {
@@ -153,6 +153,7 @@ img {
 
     #next {
         font-size: 18px;
+        padding: 1.5em;
     }
 
     p {
@@ -179,6 +180,7 @@ img {
 
     #next {
         font-size: 20px;
+        padding: 2em;
     }
 
     p {
